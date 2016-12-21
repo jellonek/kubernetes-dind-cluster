@@ -276,6 +276,7 @@ function dind::step {
   fi
 }
 
+dind::verify-prereqs
 if [ $(basename "$0") = dind-up-cluster.sh ]; then
     source "${DIND_ROOT}/config.sh"
     dind::kube-up
